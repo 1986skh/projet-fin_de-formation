@@ -33,12 +33,6 @@ jobs:
         run: npm run start:backoffice &
         env:
           CI: true
-
-      - name: Wait for API and back office servers to be ready
-        run: |
-          npx wait-on http://localhost:5173
-          npx wait-on http://localhost:5174
-
       - name: Run Cypress tests with Percy
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
