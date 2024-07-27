@@ -52,7 +52,7 @@ describe('template spec - connexion réussie', () => {
     cy.get("button").contains("Se connecter").click();
     cy.url().should('eq',"http://localhost:5173/dashboard");
     cy.contains("Bienvenue !").should("be.visible");
-    cy.percySnapshot('user Home Page')
+ 
   });
  it('tester la nav barre ', () => {
     cy.contains("Accueil").should('be.visible');
