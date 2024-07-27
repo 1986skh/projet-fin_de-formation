@@ -15,7 +15,7 @@ describe('template spec - connexion echouée', () => {
 
   it('password non valide', () => {
     cy.get("#email").type("khsmail@gmail.com");
-    cy.get("#password").type("Wild20234");
+    cy.get("#password").type("Wild20234@");
     cy.get("button").contains("Se connecter").click();
     cy.contains("Vos données ne sont pas valides").should('be.visible'); 
   });

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.13.0b4 on win32)" generated="2024-07-27T18:13:53.517559" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Client" source="C:\Users\pc\Documents\formation_testeur_2024\projet_fin_de_formation\projet-final\test_client.robot">
+<kw name="Open Browser to Login Page" type="SETUP">
+<kw name="Open Browser">
+<msg time="2024-07-27T18:13:53.972969" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<arg>${SERVER_URL}</arg>
+<arg>edge</arg>
+<status status="FAIL" start="2024-07-27T18:13:53.972918" elapsed="0.000114">No keyword with name 'Open Browser' found.</status>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" start="2024-07-27T18:13:53.973222" elapsed="0.000023"/>
+</kw>
+<status status="FAIL" start="2024-07-27T18:13:53.971689" elapsed="0.001691">No keyword with name 'Open Browser' found.</status>
+</kw>
+<test id="s1-t1" name="Adresse Mail Non Valide" line="19">
+<tag>FailedLogin</tag>
+<status status="FAIL" start="2024-07-27T18:13:53.973479" elapsed="0.000601">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-t2" name="Mot de Passe Non Valide" line="26">
+<tag>FailedLogin</tag>
+<status status="FAIL" start="2024-07-27T18:13:53.976773" elapsed="0.000803">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-t3" name="Tous les Champs Sont Obligatoires" line="33">
+<tag>FailedLogin</tag>
+<status status="FAIL" start="2024-07-27T18:13:53.979896" elapsed="0.000747">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-t4" name="Connexion Réussie" line="39">
+<tag>SuccessfulLogin</tag>
+<status status="FAIL" start="2024-07-27T18:13:53.983004" elapsed="0.000756">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-t5" name="Tester la Page Équipe" line="46">
+<tag>Navigation</tag>
+<status status="FAIL" start="2024-07-27T18:13:53.989515" elapsed="0.000443">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-t6" name="Création d'un Nouvel Utilisateur Réussie" line="52">
+<tag>UserRegistration</tag>
+<status status="FAIL" start="2024-07-27T18:13:53.991927" elapsed="0.000499">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-t7" name="Création d'un Nouvel Utilisateur Échouée" line="65">
+<tag>UserRegistration</tag>
+<status status="FAIL" start="2024-07-27T18:13:53.996613" elapsed="0.000524">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-t8" name="Afficher le Profile de l'Utilisateur" line="78">
+<tag>Profile</tag>
+<status status="FAIL" start="2024-07-27T18:13:53.998981" elapsed="0.000551">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-t9" name="Mettre à Jour le Profile de l'Utilisateur" line="89">
+<tag>ProfileUpdate</tag>
+<status status="FAIL" start="2024-07-27T18:13:54.001876" elapsed="0.000796">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-t10" name="Tester le Bouton Logout" line="98">
+<tag>Logout</tag>
+<status status="FAIL" start="2024-07-27T18:13:54.007014" elapsed="0.000691">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<kw name="Close All Browsers" type="TEARDOWN">
+<msg time="2024-07-27T18:13:54.012543" level="FAIL">User keyword cannot be empty.</msg>
+<status status="FAIL" start="2024-07-27T18:13:54.010564" elapsed="0.002075">User keyword cannot be empty.</status>
+</kw>
+<status status="FAIL" start="2024-07-27T18:13:53.519727" elapsed="0.493120">Suite setup failed:
+No keyword with name 'Open Browser' found.
+
+Also suite teardown failed:
+User keyword cannot be empty.</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="10" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="3" skip="0">FailedLogin</stat>
+<stat pass="0" fail="1" skip="0">Logout</stat>
+<stat pass="0" fail="1" skip="0">Navigation</stat>
+<stat pass="0" fail="1" skip="0">Profile</stat>
+<stat pass="0" fail="1" skip="0">ProfileUpdate</stat>
+<stat pass="0" fail="1" skip="0">SuccessfulLogin</stat>
+<stat pass="0" fail="2" skip="0">UserRegistration</stat>
+</tag>
+<suite>
+<stat pass="0" fail="10" skip="0" id="s1" name="Test Client">Test Client</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-07-27T18:13:53.586806" level="ERROR">Error in file 'C:\Users\pc\Documents\formation_testeur_2024\projet_fin_de_formation\projet-final\test_client.robot' on line 2: Importing library 'seleniumLibrary' failed: ModuleNotFoundError: No module named 'seleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\pc\AppData\Local\Programs\Python\Python313\Scripts\robot.exe
+  C:\Users\pc\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\pc\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\pc\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\pc\AppData\Local\Programs\Python\Python313
+  C:\Users\pc\AppData\Local\Programs\Python\Python313\Lib\site-packages</msg>
+</errors>
+</robot>
