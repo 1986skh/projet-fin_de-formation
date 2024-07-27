@@ -1,3 +1,4 @@
+
 const generateUserData = require('../support/generateUser');
 describe('template spec - connexion echouée', () => {
   beforeEach(() => {
@@ -34,9 +35,10 @@ describe('template spec - connexion réussie', () => {
     cy.get("#password").type("Wild2024@");
     cy.get("button").contains("Se connecter").click();
     cy.url().should('include', '/admin/dashboard');
+    cy.percySnapshot('admin Home Page');
   });
 
-  it('teter la page equipe', () => {
+  it('tester la page equipe', () => {
     cy.get('a').contains('Équipe').click();
     cy.get("h1").contains("Admin").should('be.visible'); 
     cy.get("h2").contains("Notre équipe").should('be.visible'); 
